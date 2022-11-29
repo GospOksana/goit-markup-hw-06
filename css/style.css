@@ -408,6 +408,9 @@ footer .logo{
     text-decoration: none;
     font-style: normal;
 }
+.footer-social{
+    margin-right: 93px;
+}
 .footer-social-text{
     margin-bottom: 20px;
     font-weight: 700;
@@ -449,6 +452,45 @@ footer .logo{
 }
 
 .footer-svg{
+    fill: currentColor;
+}
+.subscript{
+    
+}
+.form-subscript{
+    display: flex;
+}
+.input-subscript{
+    width: 358px;
+    height: 50px;
+    padding-left: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--prymary-white-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+}
+.button-subscript{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: var(--accent-color);
+    border-radius: 4px;
+    color: var(--prymary-white-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+}
+.footer-button-svg{
+    margin-left: 10px;
     fill: currentColor;
 }
 /* -------------portfolio------------------- */
@@ -587,6 +629,7 @@ width: 581px;
 background-color: var(--prymary-white-color);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
+padding: 40px;
 }
 .modal-close{
     position: absolute;
@@ -600,4 +643,56 @@ border-radius: 4px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: var(--prymary-white-color);
+    
+}
+.form-modal{
+    display: flex;
+    flex-direction: column;
+}
+.form-modal-block{
+    position: relative;
+}
+.form-modal-svg{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.modal-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.1;
+    text-align: center;
+    color: var(--prymary-color-text);
+    margin-bottom: 12px;
+}
+.form-modal-label{
+    margin-bottom: 10px;
+}
+
+.form-modal-label p{
+    padding: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+}
+.form-modal-input{
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+}
+.form-modal-input:focus,
+.form-modal-input:focus-visible{
+    border: 1px solid var(--accent-color);
+}
+.form-modal-label textarea{
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
 }
