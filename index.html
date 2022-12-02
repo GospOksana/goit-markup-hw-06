@@ -354,7 +354,10 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-close" data-modal-close>
-                <img src="./image/modal/close.svg" alt="close" width="11">
+                <!-- <img src="./image/modal/close.svg" alt="clouse" width="11"  class="modal-close-svg"> -->
+                <svg width="11" height="11" class="modal-close-svg">
+                    <use href="./image/modal/close.svg"></use>
+                </svg>
             </button>
             <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
             <form class="form-modal">
@@ -391,7 +394,12 @@
                     <p>Коментар</p>
                     <textarea name="coment" placeholder="Введіть текст"></textarea>
                 </label>
-                <input type="checkbox"><p>Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></p>
+                <label class="form-modal-check">
+                    <input type="checkbox" class="form-modal-checkbox">
+                    <span class="chekbox-icon"></span>
+                    <p>Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></p> 
+                </label>
+                
                 <button type="submit" class="form-modal-submit">Відправити
                     </button>
                 
