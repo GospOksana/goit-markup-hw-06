@@ -339,7 +339,7 @@
                         <label>
                             <input type="email" name="email" placeholder="E-mail" class="input-subscript">
                         </label>
-                        <button type="submit" class="button-subscript"><p>Підписатися</p>
+                        <button type="submit" class="button-subscript"><span>Підписатися</span>
                             <svg width="24" height="24" class="footer-button-svg">
                                 <use href="./image/sprite.svg#send-form"></use>
                             </svg>
@@ -356,48 +356,48 @@
             <button class="modal-close" data-modal-close>
                 <!-- <img src="./image/modal/close.svg" alt="clouse" width="11"  class="modal-close-svg"> -->
                 <svg width="11" height="11" class="modal-close-svg">
-                    <use href="./image/modal/close.svg"></use>
+                    <use href="./image/sprite.svg#close"></use>
                 </svg>
             </button>
             <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
             <form class="form-modal">
-                <label class="form-modal-label"> 
-                    <p>Ім'я</p>
+                <label for="user-name" class="form-modal-label"> </label>
+                    <span>Ім'я</span>
                     <div class="form-modal-block">
-                        <input type="text" name="user-name" class="form-modal-input">
+                        <input type="text" id="user-name" name="user-name"  class="form-modal-input">
                         <svg width="18" height="18" class="form-modal-svg">
                             <use href="./image/sprite.svg#person-modal"></use>
                         </svg>
                     </div>
-                </label>
-                <label class="form-modal-label">
-                    <p>Телефон</p>
+                
+                <label for="tel"  class="form-modal-label"></label>
+                    <span>Телефон</span>
                     <div class="form-modal-block">
-                        <input type="tel" name="tel" class="form-modal-input">
+                        <input type="tel" id="tel" name="tel" class="form-modal-input">
                         <svg width="18" height="18" class="form-modal-svg">
                             <use href="./image/sprite.svg#phone-modal"></use>
                         </svg>
                     </div>
                    
-                </label>
-                <label class="form-modal-label">
-                    <p>Пошта</p>
+                
+                <label for="mail" class="form-modal-label"></label>
+                    <span>Пошта</span>
                     <div class="form-modal-block">
-                        <input type="mail" name="mail" class="form-modal-input">
+                        <input type="mail" id="mail" name="mail" class="form-modal-input">
                         <svg width="18" height="18" class="form-modal-svg">
                             <use href="./image/sprite.svg#email-modal"></use>
                         </svg>
                     </div>
                     
-                </label>
+                
                 <label class="form-modal-label">
-                    <p>Коментар</p>
-                    <textarea name="coment" placeholder="Введіть текст"></textarea>
+                    <span>Коментар</span>
+                    <textarea name="coment" class="form-modal-textarea" placeholder="Введіть текст"></textarea>
                 </label>
                 <label class="form-modal-check">
                     <input type="checkbox" class="form-modal-checkbox">
                     <span class="chekbox-icon"></span>
-                    <p>Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></p> 
+                    <span>Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></span> 
                 </label>
                 
                 <button type="submit" class="form-modal-submit">Відправити
